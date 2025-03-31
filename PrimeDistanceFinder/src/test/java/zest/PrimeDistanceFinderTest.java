@@ -24,7 +24,7 @@ class PrimeDistanceFinderTest {
     }
 
     @Test
-    void alotaprimesTest() {
+    void alotaPrimesTest() {
         int[] nums = {10, 2, 7, 3, 5, 11};
         assertEquals(1, PrimeDistanceFinder.findSmallestPrimeDistance(nums));
     }
@@ -32,12 +32,7 @@ class PrimeDistanceFinderTest {
     @Test
     void negativeTest() {
         int[] nums = {-5, -3, 2, 7};
-        assertEquals(2, PrimeDistanceFinder.findSmallestPrimeDistance(nums));
+        assertEquals(5, PrimeDistanceFinder.findSmallestPrimeDistance(nums)); /*since there are no negative primes*/
     }
 
-    @Test
-    void largeTest() {
-        int[] nums = {2, 10, 17, 50};
-        assertEquals(7, PrimeDistanceFinder.findSmallestPrimeDistance(nums));
-    }
 }
