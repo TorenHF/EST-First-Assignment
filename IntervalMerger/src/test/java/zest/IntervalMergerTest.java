@@ -1,7 +1,7 @@
 package zest;
 
 
-class IntervalMergerTest {
+public class IntervalMergerTest {
 
 
 }

@@ -1,6 +1,6 @@
 package zest;
 
-class PrimeDistanceFinderTest {
+public class PrimeDistanceFinderTest {
 
  
 }

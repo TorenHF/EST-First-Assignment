@@ -1,7 +1,7 @@
 package zest;
 
 
-class NonPrimeSpiralMatrixCreatorTest {
+public class NonPrimeSpiralMatrixCreatorTest {
 
 
 }

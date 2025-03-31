@@ -1,6 +1,6 @@
 package zest;
 
-class PatternEncoderTest {
+public class PatternEncoderTest {
 
  
 }

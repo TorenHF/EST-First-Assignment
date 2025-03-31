@@ -1,6 +1,6 @@
 package zest;
 
-class FractionToDecimalTest {
+public class FractionToDecimalTest {
 
  
 }
