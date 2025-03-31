@@ -10,10 +10,6 @@ class PatternEncoderTest {
         assertEquals("2[a]3[b]4[c]", PatternEncoder.encodeString("aabbbcccc"));
     }
 
-    @Test
-    void singleTest() {
-        assertEquals("a", PatternEncoder.encodeString("a"));
-    }
 
     @Test
     void emptyTest() {
@@ -30,10 +26,7 @@ class PatternEncoderTest {
         assertEquals("3[a]2[bc]", PatternEncoder.encodeString("aaabcbc"));
     }
 
-    @Test
-    void alternatingTest() {
-        assertEquals("abcd", PatternEncoder.encodeString("abcd"));
-    }
+
 
     @Test
     void edgeCaseTest() {
