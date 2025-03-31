@@ -15,6 +15,18 @@
       <sourceFolder url="file://$MODULE_DIR$/PrimeDistanceFinder/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/StringTransformer/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StringTransformer/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ArrayElementSwapper/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ArrayElementSwapper/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/ConsecutiveElementSum/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ConsecutiveElementSum/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/EventScheduler/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EventScheduler/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/FractionToDecimal/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FractionToDecimal/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/IntervalMerger/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IntervalMerger/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/NonPrimeSpiralMatrixCreator/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NonPrimeSpiralMatrixCreator/src/test/java" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
