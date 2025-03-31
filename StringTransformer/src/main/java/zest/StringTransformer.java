@@ -1,4 +1,15 @@
 package zest;
+/**
+ * Computes the minimum number of operations required to transform one string into another.
+ * legal operations:
+ * 1) Insert a character
+ * 2) Remove a character
+ * 3) Replace a character
+ *
+ * @param start the original string.
+ * @param target the target string.
+ * @return the minimum number of edits needed to convert {@code start} into {@code target}.
+ */
 
 public class StringTransformer {
     public static int minOperations(String start, String target) {
