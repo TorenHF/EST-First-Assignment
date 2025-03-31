@@ -11,8 +11,8 @@ public class StringTransformerTest {
     }
 
     @Test
-    void classicTest() {
-        assertEquals(2, StringTransformer.minOperations("bigger", "beggar"));
+    void mixed1Test() {
+        assertEquals(3, StringTransformer.minOperations("bigger", "beggars"));
     }
 
     @Test
@@ -26,7 +26,7 @@ public class StringTransformerTest {
     }
 
     @Test
-    void mixedsTest() {
+    void mixed2Test() {
         assertEquals(4, StringTransformer.minOperations("intention", "interventions"));
     }
 
