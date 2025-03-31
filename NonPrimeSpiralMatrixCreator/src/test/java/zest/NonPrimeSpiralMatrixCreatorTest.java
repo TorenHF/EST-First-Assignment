@@ -11,6 +11,11 @@ public class NonPrimeSpiralMatrixCreatorTest {
 
         assertArrayEquals(expected, output);
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegative() {
+        int input = -2;
+        int[] output = NonPrimeSpiralMatrixCreator.createSpiralMatrix(input);
+    }
 
     @Test
     public void testOne() {

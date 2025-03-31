@@ -1,7 +1,7 @@
 package zest;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class FractionToDecimalTest {
 
@@ -16,7 +16,17 @@ public class FractionToDecimalTest {
 
     }
     @Test
-    public void testZeroResult(){
+    public void testZeroDenominatorReturnsNull() {
+        int numerator = 1;
+        int denominator = 0;
+
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+
+        assertNull(result);
+    }
+
+    @Test
+    public void testZero(){
         int numerator = 0;
         int denominator = 5;
         String expected = "0";
@@ -52,7 +62,7 @@ public class FractionToDecimalTest {
         assertEquals(expected, result);
     }
 
-    // A number which starts with non-repeating digits then moves on to repeat: 1/6 = 0.1(6)
+
     @Test
     public void testNonRepeatingThenRepeating(){
         int numerator = 1;
