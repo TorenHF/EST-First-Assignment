@@ -7,32 +7,32 @@ class StringTransformerTest {
 
     @Test
     void identicalTest() {
-        assertEquals(0, StringTransformer.minOperations("hello", "hello"));
+        assertEquals(0, StringTransformer.minOperations("test", "test"));
     }
 
     @Test
-    void insertTest() {
-        assertEquals(3, StringTransformer.minOperations("kitten", "sitting"));
+    void classicTest() {
+        assertEquals(2, StringTransformer.minOperations("bigger", "beggar"));
     }
 
     @Test
     void removeTest() {
-        assertEquals(3, StringTransformer.minOperations("horse", "ros"));
+        assertEquals(1, StringTransformer.minOperations("world", "word"));
     }
 
     @Test
     void replaceTest() {
-        assertEquals(2, StringTransformer.minOperations("flaw", "lawn"));
+        assertEquals(1, StringTransformer.minOperations("stitch", "snitch"));
     }
 
     @Test
     void mixedOperationsTest() {
-        assertEquals(5, StringTransformer.minOperations("intention", "execution"));
+        assertEquals(4, StringTransformer.minOperations("intention", "interventions"));
     }
 
     @Test
     void emptyToNonEmptyTest() {
-        assertEquals(5, StringTransformer.minOperations("", "world"));
+        assertEquals(5, StringTransformer.minOperations("", "tests"));
     }
 
     @Test
