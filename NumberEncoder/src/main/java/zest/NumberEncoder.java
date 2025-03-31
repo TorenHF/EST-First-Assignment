@@ -14,7 +14,7 @@ public class NumberEncoder {
             throw new ArrayIndexOutOfBoundsException("Mapping array must contain at least 10 characters.");
         }
         StringBuilder encoded = new StringBuilder();
-        for (int i = 0; i < number.length(); i++) {
+        for (int i = 0; i < number.length()-1; i++) {
             if (!Character.isDigit(number.charAt(i))) {
                 throw new IllegalArgumentException("Non-numeric characters are not allowed.");
             }
