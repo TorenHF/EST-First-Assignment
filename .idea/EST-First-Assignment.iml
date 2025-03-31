@@ -6,11 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/NumberEncoder/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NumberEncoder/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/PalindromeNumber/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PalindromeNumber/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/PalindromeNumber/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/ParenthesesValidator/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ParenthesesValidator/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/ParenthesesValidator/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/PatternEncoder/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PatternEncoder/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/PatternEncoder/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/PrimeDistanceFinder/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PrimeDistanceFinder/src/test/java" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/StringTransformer/src/main/java" isTestSource="false" />

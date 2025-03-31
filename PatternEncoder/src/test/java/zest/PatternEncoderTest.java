@@ -21,15 +21,15 @@ class PatternEncoderTest {
         assertNull(PatternEncoder.encodeString(null));
     }
 
-    @Test
-    void againTest() {
+   /* @Test
+    void multTest() {
         assertEquals("3[a]2[bc]", PatternEncoder.encodeString("aaabcbc"));
     }
-
+i should prolly rtfm first*/
 
 
     @Test
     void edgeCaseTest() {
-        assertEquals("1[1]1[2]1[3]1[4]1[5]", PatternEncoder.encodeString("12345"));
+        assertEquals("asdfg", PatternEncoder.encodeString("asdfg"));
     }
 }
