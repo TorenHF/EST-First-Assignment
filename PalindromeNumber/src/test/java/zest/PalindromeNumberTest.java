@@ -6,23 +6,26 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PalindromeNumberTest {
 
     @Test
-    void PalindromeTest() {
+    void palindromeTest() {
         assertTrue(PalindromeNumber.isPalindrome(121));
     }
 
     @Test
-    void NegativeTest() {
+    void negativeTest() {
         assertFalse(PalindromeNumber.isPalindrome(-121));
     }
 
     @Test
-    void SingleTest() {
+    void wrongPalindromeTest() { assertFalse(PalindromeNumber.isPalindrome(21)); }
+
+    @Test
+    void singleTest() {
         assertTrue(PalindromeNumber.isPalindrome(7));
     }
 
 
     @Test
-    void IllegalTest() {
+    void illegalTest() {
         assertThrows(NumberFormatException.class, () -> {
             Integer.parseInt("12a21");
         });
