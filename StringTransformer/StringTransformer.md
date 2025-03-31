@@ -1,0 +1,15 @@
+# Testing results
+
+---
+code seems fine, nothing added (well, I added an explanation to the start of the file, but that was mostly for my own convenience), all tests passed.
+Tested for:
+- identical strings
+- 2 mixed operation cases
+- 1 remove case
+- 1 replace case
+- 1 from empty string to string case
+- 1 from string to empty string case
+
+---
+## line coverage
+100%
