@@ -7,7 +7,7 @@ import java.util.Stack;
 class ParenthesesValidatorTest {
 
     @Test
-    void PairsTest() {
+    void pairsTest() {
         assertTrue(ParenthesesValidator.isValid("()"));
         assertTrue(ParenthesesValidator.isValid("{}"));
         assertTrue(ParenthesesValidator.isValid("[]"));
