@@ -2,8 +2,23 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/NumberEncoder/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NumberEncoder/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/PalindromeNumber/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PalindromeNumber/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/ParenthesesValidator/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ParenthesesValidator/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/PatternEncoder/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PatternEncoder/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/PrimeDistanceFinder/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PrimeDistanceFinder/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/StringTransformer/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StringTransformer/src/test/java" type="java-test-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="junit-4.13.2" level="project" />
+    <orderEntry type="library" name="hamcrest-core-1.3" level="project" />
   </component>
 </module>
