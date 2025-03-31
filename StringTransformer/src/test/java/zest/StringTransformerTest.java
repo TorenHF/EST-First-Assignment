@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class StringTransformerTest {
 
     @Test
-    void identicalTest() {
+    void identTest() {
         assertEquals(0, StringTransformer.minOperations("test", "test"));
     }
 
@@ -16,7 +16,7 @@ public class StringTransformerTest {
     }
 
     @Test
-    void removeTest() {
+    void rmTest() {
         assertEquals(1, StringTransformer.minOperations("world", "word"));
     }
 
@@ -26,17 +26,17 @@ public class StringTransformerTest {
     }
 
     @Test
-    void mixedOperationsTest() {
+    void mixedsTest() {
         assertEquals(4, StringTransformer.minOperations("intention", "interventions"));
     }
 
     @Test
-    void emptyToNonEmptyTest() {
+    void emptyTest() {
         assertEquals(5, StringTransformer.minOperations("", "tests"));
     }
 
     @Test
-    void nonEmptyToEmptyTest() {
+    void toEmptyTest() {
         assertEquals(4, StringTransformer.minOperations("test", ""));
     }
 }
