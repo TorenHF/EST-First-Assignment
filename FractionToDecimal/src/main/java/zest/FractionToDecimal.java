@@ -1,4 +1,6 @@
 package zest;
+import java.util.HashMap;
+import java.util.Map;
 
 public class FractionToDecimal {
     /**
@@ -12,6 +14,10 @@ public class FractionToDecimal {
         if (denominator == 0) {
             return null;
         }
+        if (numerator == 0) {
+            return "0";
+        }
+
         StringBuilder result = new StringBuilder();
         // Handle negative numbers
         if (numerator < 0 ^ denominator < 0) {

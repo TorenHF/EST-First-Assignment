@@ -12,10 +12,117 @@ public class FractionToDecimalTest {
         String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
         String expected = "1";
 
-        assertEquals(output, expected);
-
+        assertEquals(expected, result);
 
     }
+    @Test
+    public void testZeroResult(){
+        int numerator = 0;
+        int denominator = 5;
+        String expected = "0";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
 
- 
+    @Test
+    public void testOneResult(){
+        int numerator = 4456;
+        int denominator = 4456;
+        String expected = "1";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+
+    @Test
+    public void testNonRepeating(){
+        int numerator = 1;
+        int denominator = 2;
+        String expected = "0.5";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testLongRepeating(){
+        int numerator = 1;
+        int denominator = 7;
+        String expected = "0.(142857)";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+    // A number which starts with non-repeating digits then moves on to repeat: 1/6 = 0.1(6)
+    @Test
+    public void testNonRepeatingThenRepeating(){
+        int numerator = 1;
+        int denominator = 6;
+        String expected = "0.1(6)";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+    // Numbers greater than one with repeating digits: 8/3 = 2.(6)
+    @Test
+    public void testGreaterThanOneRepeating(){
+        int numerator = 8;
+        int denominator = 3;
+        String expected = "2.(6)";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+    // Negative number cases
+
+    // Negative numerator
+    @Test
+    public void testNegativeNumerator(){
+        int numerator = -1;
+        int denominator = 2;
+        String expected = "-0.5";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+    // Negative denominator
+    @Test
+    public void testNegativeDenominator(){
+        int numerator = 1;
+        int denominator = -2;
+        String expected = "-0.5";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+    // Both numerator and denominator negative
+    @Test
+    public void testBothNegative(){
+        int numerator = -1;
+        int denominator = -2;
+        String expected = "0.5";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+
+    @Test
+    public void testNegativeZero(){
+        int numerator = -0;
+        int denominator = 3;
+        String expected = "0";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+
+    @Test
+    public void testZeroNumeratorNegativeDenom(){
+        int numerator = 0;
+        int denominator = -3;
+        String expected = "0";
+        String result = FractionToDecimal.fractionToDecimal(numerator, denominator);
+        assertEquals(expected, result);
+    }
+
+
 }

@@ -23,10 +23,10 @@ public class EventSchedulerTest {
         assertEquals(output, expected);
     }
 
-    // Simple overlap
+    // No overlap
     @Test
     public void testOverlappingEvents() {
-        int[][] events = { {1, 5}, {4, 6}, {7, 9} };
+        int[][] events = { {1, 5}, {6, 7}, {8, 9} };
         boolean output = EventScheduler.hasConflict(events);
         boolean expected = true;
         assertEquals(output, expected);
@@ -52,7 +52,7 @@ public class EventSchedulerTest {
 
     // Not in Order true
     @Test
-    public void estNotinOrderTrue(){
+    public void testNotinOrderTrue(){
         int[][] events = { {7, 9}, {4, 6}, {1, 5} };
         boolean output = EventScheduler.hasConflict(events);
         boolean expected = true;

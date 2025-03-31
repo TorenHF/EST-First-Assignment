@@ -13,6 +13,9 @@ public class NonPrimeSpiralMatrixCreator {
     }
 
     public static int[] createSpiralMatrix(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("The number must be positive or 0");
+        }
         if (n == 0) {
             return new int[0];
         }

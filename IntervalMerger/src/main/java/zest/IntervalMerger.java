@@ -10,6 +10,15 @@ public class IntervalMerger {
             return intervals;
         }
 
+        for (int[] interval : intervals) {
+            if (interval[0] > interval[1]) {
+                // Swap the start and end values if they are in reverse order
+                int temp = interval[0];
+                interval[0] = interval[1];
+                interval[1] = temp;
+            }
+        }
+
         // Sort the intervals by their starting times
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
