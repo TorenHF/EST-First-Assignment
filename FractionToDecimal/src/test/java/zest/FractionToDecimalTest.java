@@ -72,7 +72,7 @@ public class FractionToDecimalTest {
         assertEquals(expected, result);
     }
 
-    // Numbers greater than one with repeating digits: 8/3 = 2.(6)
+
     @Test
     public void testGreaterThanOneRepeating(){
         int numerator = 8;
@@ -82,9 +82,7 @@ public class FractionToDecimalTest {
         assertEquals(expected, result);
     }
 
-    // Negative number cases
 
-    // Negative numerator
     @Test
     public void testNegativeNumerator(){
         int numerator = -1;
@@ -94,7 +92,7 @@ public class FractionToDecimalTest {
         assertEquals(expected, result);
     }
 
-    // Negative denominator
+
     @Test
     public void testNegativeDenominator(){
         int numerator = 1;
@@ -104,7 +102,6 @@ public class FractionToDecimalTest {
         assertEquals(expected, result);
     }
 
-    // Both numerator and denominator negative
     @Test
     public void testBothNegative(){
         int numerator = -1;
