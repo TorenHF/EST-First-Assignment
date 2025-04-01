@@ -28,7 +28,7 @@ public class EventSchedulerTest {
     public void testOverlappingEvents() {
         int[][] events = { {1, 5}, {6, 7}, {8, 9} };
         boolean output = EventScheduler.hasConflict(events);
-        boolean expected = true;
+        boolean expected = false;
         assertEquals(output, expected);
     }
 
